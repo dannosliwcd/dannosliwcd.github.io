@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+  <title>Daniel Wilson's Personal Website</title>
+  <meta name="description" content="Things about and by Daniel Wilson."/>
+  <link rel="canonical" href="http://dannosliwcd.github.io"/>
+  <style>
+  body {margin: max(1em, 5%) auto; background: #f9f9f9; color: #333333; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; max-width: min(80em, 90%);}
+  h1,h2,h3 {margin-bottom: 0.2em;}
+  a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
+  img#profilepic {min-width: 100px; max-width: min(600px, 25%); max-height: 15em; float: left; margin-right: 1em; object-fit: scale-down;}
+  #intro {overflow: hidden;}
+  a:hover {border-bottom: 0;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Daniel Wilson's Personal Page</h1>
+</header>
+
+<div id="intro">
+<img id="profilepic" src="daniel_wilson.jpg" alt="Photograph of Daniel Wilson">
+<p style="margin-top: 0;">Hi, I&#39;m Daniel Wilson. I graduated with a PhD in
+Computer Engineering at Boston University in August 2023, advised by Prof. Ayse
+Coskun in the PeacLab. I have been researching opportunities to integrate job
+performance awareness into system-level power management policies in
+high-performance computing systems. As part of that work, I have been focusing
+on applications for quality-of-service-aware data center participation in
+demand response programs. During my PhD program, I have also been working as a
+research and software development intern on the
+<a href="http://geopm.github.io">GEOPM</a> project at Intel. I am interested in
+continuing to explore ways we can make computers part of a more sustainable
+future.</p>
+
+<p>This web page outlines some of my recent research and software
+contributions. Please check out
+<a href="Daniel_Wilson_Resume.pdf">my resume 
+<svg width="1em" version="1.1" viewBox="0 0 8 8.8279" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-1.3698 .22043)"><rect x="1.674" y=".083831" width="7.3915" height="8.2194" rx=".89507" ry=".89507" fill="#fff" stop-color="#000000" stroke="#000" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1" stroke-width=".60851"/><g transform="matrix(1.1516 0 0 1.2207 -.4347 -.77052)" stroke-width=".84343"><circle cx="3.7479" cy="1.7625" r=".42119" stop-color="#000000"/><path d="m4.6281 3.0317h-1.7605c0-0.48614 0.39409-0.88023 0.88023-0.88023s0.88023 0.39409 0.88023 0.88023z" stop-color="#000000" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="1" stroke-width=".44632"/></g><g fill="none" stroke="#000"><g stroke-width=".52917"><path d="m5.2994 2.1509h2.5724"/><path d="m2.8553 3.7384h5.0289"/><path d="m2.8553 5.3259h5.0289"/></g><path d="m2.8553 6.9134h5.0289" stroke-width=".52917"/></g></g></svg>
+</a> and reach out to me on
+<a href="https://www.linkedin.com/in/daniel-wilson-b4433049/">LinkedIn</a> or
+email me at <a href="mailto:danielcw@bu.edu">danielcw@bu.edu</a>.</p>
+</div>
+
+<h2>Software Development</h2>
+
+<h3>Open Software Contributions</h3>
+<ul>
+  <li>Develop a software power management policy to <a href="https://github.com/geopm/geopm">GEOPM</a> that configures non-uniform turbo frequency limits in a CPU to speed up imbalanced bulk-synchronous parallel applications.</li>
+  <li>Implement <a href="https://github.com/geopm/geopm">GEOPM</a> interfaces to interact with PM Counters in Compute-Node Linux, and read or write settings for non-uniform turbo frequency limits.</li>
+  <li>Enhance <a href="https://github.com/geopm/geopm">GEOPM</a> interfaces to interact with Model-Specific Registers (MSRs) by combining multiple read or write operations into a single io_uring batched operation.</li>
+  <li>Fix bugs, update documentation, and introduce new features in <a href="https://github.com/geopm/geopm">GEOPM</a> since June 2019.</li>
+  <li>Fix bugs in the OpenStack unified <a href="https://opendev.org/openstack/openstacksdk">SDK</a> and implement missing management operations in the <a href="https://opendev.org/openstack/python-openstackclient">CLI client</a> (<a href="https://review.opendev.org/q/owner:danielcw%2540bu.edu">Collected code reviews</a>).</li>
+  <li>Fix a <a href="https://github.com/Cimbali/pympress/issues/159">font-rendering bug</a> in a <a href="https://github.com/Cimbali/pympress">PDF slide presentation tool</a>.</li>
+  <li>Create a <a href="https://github.com/dannosliwcd/arithmetic-intensity">microbenchmark</a> to explore relationships between performance and software power management decisions in imbalanced bulk-synchronous parallel applications.</li>
+</ul>
+
+<h3>Additional Software Experience</h3>
+<ul>
+  <li>Develop tools and drivers that handle high-availability and disaster-recovery scenarios for software RAID in a clustered storage operating system (Data ONTAP).</li>
+  <li>Develop software to manage services and their allocated resources in an edge computing platform (Itron Riva)</li>
+</ul>
+
+<h2>Publications</h2>
+<ol reversed>
+  <li><strong>Daniel C. Wilson</strong>. <a href="https://open.bu.edu/handle/2144/46654">Performance-Aware Site-Wide Data Center Power Management</a>. PhD Dissertation, <em>Department of Electrical and Computer Engineering, Boston University</em>, 2023.</li>
+  <li><strong>Daniel C. Wilson</strong>, Asma H. Al-rawi, Lowren H. Lawson, Siddhartha Jana, Federico Ardanaz, Jonathan M. Eastep, and Ayse K. Coskun. <a href="https://ieeexplore.ieee.org/abstract/document/9969356">Guiding Hardware-Driven Turbo with Application Performance Awareness</a>. In <em>Proceedings of the 13th International Green and Sustainable Computing Conference (IGSC) Energy Efficient HPC State of the Practice Workshop (EE HPC SOP)</em>, Oct. 2022.</li>
+  <li><strong>Daniel C. Wilson</strong>, Ioannis Paschalidis, and Ayse K. Coskun. <a href="https://ieeexplore.ieee.org/abstract/document/9926322">Site-Wide HPC Data Center Demand Response</a>. In <em>High Performance Extreme Computing Conference (HPEC)</em>, Sept. 2022.</li>
+  <li>Yijia Zhang, <strong>Daniel C. Wilson</strong>, Ioannis Ch. Paschalidis, and Ayse K. Coskun. <a href="https://ieeexplore.ieee.org/abstract/document/9423669">HPC Data Center Participation in Demand Response: an Adaptive Policy with QoS Assurance</a>. In <em>IEEE Transactions on Sustainable Computing</em>, vol. 7, no. 1, pp. 157-171, Jan.-March 2022.</li>
+  <li><strong>Daniel C. Wilson</strong>, Siddhartha Jana, Aniruddha Marathe, Stephanie Brink, Christopher M. Cantalupo, Diana R. Guttman, Brad Geltz, Lowren H. Lawson, Asma H. Al-rawi, Ali Mohammad, Fuat Keceli, Federico Ardanaz, Jonathan M. Eastep, Ayse K. Coskun. <a href="https://ieeexplore.ieee.org/abstract/document/9460501">Introducing Application Awareness Into a Unified Power Management Stack</a>. In <em>Proceedings of IEEE International Parallel and Distributed Processing Symposium (IPDPS)</em>, pp. 320-329, May 2021.</li>
+  <li>Yijia Zhang, <strong>Daniel C. Wilson</strong>, Ioannis Ch. Paschalidis, and Ayse K. Coskun. <a href="https://ieeexplore.ieee.org/abstract/document/9474075">A Data Center Demand Response Policy for Real-World Workload Scenarios in HPC.</a> In <em>Design, Automation and Test in Europe Conference (DATE)</em>, 2021.</li>
+  <li><strong>Daniel C. Wilson</strong>, Deepan N. Seeralan, Kyle D. Sterling, Linda A. Riedle, Loellyn J. Cassell, Mayank Saxena, Sandeep T. Nirmale, "Storage Health Status Synchronization," United States Patent 9348715 B2, May 24, 2016.</li>
+</ol>
+
+<h2>Presentations</h2>
+<ul>
+  <li><a href="https://youtu.be/5c16K0fS8Ao">Demand Response Policies for HPC Data Centers</a></li>
+  <li><a href="https://youtu.be/PCvoMIWycRI?list=PLzGoEWIBCNnJqznXYptEvRj1-cnJTRcu7">Introducing Application Awareness Into a Unified Power Management Stack</a></li>
+  <li><a href="https://youtu.be/mILywKwGwao?list=PLzGoEWIBCNnKh0DUI8QOBj_pYNRb0evsE&t=104">Experiences as a Graduate Student in the PeacLab</a></li>
+</ul>
+
+<h2>Mentions</h2>
+<ul>
+  <li><a href="https://www.bu.edu/hic/2022/10/12/ask-the-experts-how-are-data-centers-impacted-by-climate-change/">Ask the Experts – How Are Data Centers Impacted by Climate Change?</a></li>
+  <li><a href="https://www.bu.edu/hic/2021/08/19/balancing-electricity-demands-and-costs-of-high-performance-computing/">Balancing electricity demands and costs of high-performance computing</a></li>
+  <li><a href="https://www.facebook.com/BUece/posts/pfbid02y3whMr26zKnZzZA3dwYqhaYhUZXMME4C1h2jnXw6iGebEJx5C6JrGrFGbizAUFvpl">2022 ECE Graduate Teaching Assistant of the Year</a></li>
+  <li><a href="https://www.bu.edu/cise/cise-announces-cgsw-9-0-best-presenter-awards/">CISE Announces CGSW 9.0 Best Presenter Awards</a></li>
+</ul>
+
+<footer>
+  <hr>
+  <p>
+  Find me on <a href="https://www.linkedin.com/in/daniel-wilson-b4433049/">LinkedIn</a> and 
+  <a href="https://github.com/dannosliwcd/">GitHub <svg viewbox="0 0 98 96" height="20"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/><title>GitHub Logo</title></svg></a>.<br />Email me at <a href="mailto:danielcw@bu.edu">danielcw@bu.edu</a>
+  </p>
+</footer>
+</body>
+</html>
